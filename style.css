@@ -1,1 +1,145 @@
-body{font-family:Arial;background:#f4f4f4}.c{max-width:350px;margin:40px auto;background:#fff;padding:20px;border-radius:8px}input,button{width:100%;margin:6px 0;padding:10px}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#0f4c81,#1f78d1);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    opacity:.9;
+}
+
+/* Main Card */
+
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #1f78d1;
+}
+
+.profile h2{
+    color:#0f4c81;
+    margin-bottom:10px;
+}
+
+.info p{
+    margin:8px 0;
+}
+
+/* Services */
+
+.services{
+    margin-top:30px;
+}
+
+.services h3{
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+.services ul{
+    list-style:none;
+}
+
+.services li{
+    background:#eef5ff;
+    padding:12px;
+    margin:10px 0;
+    border-left:5px solid #1f78d1;
+    border-radius:8px;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 28px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#1ebc59;
+    transform:translateY(-3px);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f4c81;
+    color:white;
+    margin-top:40px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header h1{
+font-size:30px;
+}
+
+.profile{
+flex-direction:column;
+text-align:center;
+}
+
+.profile img{
+width:120px;
+height:120px;
+}
+
+}
